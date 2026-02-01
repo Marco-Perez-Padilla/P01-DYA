@@ -15,7 +15,7 @@
 **      Enlaces de interes
 
 ** Historial de revisiones:
-**      31/01/2025 - Creacion (primera version) del codigo
+**      31/01/2026 - Creacion (primera version) del codigo
 **/
 
 #ifndef EXCEPTIONS_H
