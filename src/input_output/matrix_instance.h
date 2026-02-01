@@ -31,8 +31,8 @@ class MatrixInstance {
 
  public: 
   MatrixInstance(const Matrix& A, const Matrix& B);
-  const Matrix& getMatrixA() {return MatrixA_;}
-  const Matrix& getMatrixB() {return MatrixB_;}
+  const Matrix& getMatrixA() const {return MatrixA_;}
+  const Matrix& getMatrixB() const {return MatrixB_;}
   bool CanBeMultiplied() const;
   std::string PrintDimensions() const;
 };
