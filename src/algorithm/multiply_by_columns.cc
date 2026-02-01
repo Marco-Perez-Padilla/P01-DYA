@@ -18,14 +18,14 @@
 **      01/02/2026 - Creación (primera versión) del código
 **/
 
-#include "multiply_by_rows.h"
+#include "multiply_by_columns.h"
 
 /**
  * @brief Method solve, implemented as multiplication with columns first
  * @param MatrixInstance instance of the problem
  * @return MatrixSolution, matrix resulted by the multiplication
  */
-MatrixSolution MultiplyByRows::solve(const MatrixInstance& instance) {
+MatrixSolution MultiplyByColumns::solve(const MatrixInstance& instance) {
   const Matrix& MatrixA = instance.getMatrixA();
   const Matrix& MatrixB = instance.getMatrixB();
   
