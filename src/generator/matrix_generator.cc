@@ -45,8 +45,8 @@ double MatrixGenerator::RandomDouble(double min, double max) const {
  */
 Matrix MatrixGenerator::GenerateRandomMatrix(int rows, int columns, double min_value, double max_value) const {
   Matrix matrix(rows, columns);
-  for (unsigned int i = 0; i < rows; ++i) {
-    for (unsigned int j = 0; j < columns; ++j) {
+  for (int i = 0; i < rows; ++i) {
+    for (int j = 0; j < columns; ++j) {
       matrix(i, j) = RandomDouble(min_value, max_value);
     }
   }
