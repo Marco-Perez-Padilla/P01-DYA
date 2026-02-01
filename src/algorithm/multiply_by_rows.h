@@ -9,7 +9,7 @@
 ** Correo: alu0101469348@ull.edu.es
 ** Fecha: 01/02/2026
 
-** Archivo MultiplyByRows.h: Algoritmo de multiplicación por filas (i-k-j)
+** Archivo multiply_by_rows.h: Algoritmo de multiplicación por filas (i-k-j)
 **
 ** Referencias:
 **      Enlaces de interés

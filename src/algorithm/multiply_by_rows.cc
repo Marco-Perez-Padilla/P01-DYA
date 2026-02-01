@@ -9,7 +9,7 @@
 ** Correo: alu0101469348@ull.edu.es
 ** Fecha: 01/02/2026
 
-** Archivo MultiplyByRows.cc: Implementación del algoritmo por filas
+** Archivo multiply_by_rows.cc: Implementación del algoritmo por filas
 **
 ** Referencias:
 **      Enlaces de interés
