@@ -36,11 +36,12 @@ MatrixSolution MultiplyByColumns::solve(const MatrixInstance& instance) {
   Matrix MatrixC(rows_A, columns_B);
 
   for (unsigned int j = 0; j < columns_B; ++j) {
-    for (unsigned int k = 0; k < columns_A; ++k) {
-      double bkj = MatrixB(k, j);
-      for (unsigned int i = 0; i < rows_A; ++i) {
-        MatrixC(i, j) += MatrixA(i, k) * bkj;
+    for (unsigned int i = 0; i < rows_A; ++i) {
+      double sum = 0.0;  
+      for (unsigned int k = 0; k < columns_A; ++k) {
+        sum += MatrixA(i, k) * MatrixB(k, j);
       }
+      MatrixC(i, j) = sum;  
     }
   }
   
