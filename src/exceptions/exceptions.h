@@ -9,7 +9,7 @@
 ** Correo: alu0101469348@ull.edu.es
 ** Fecha: 31/01/2026
 
-** Archivo exceptions.h: 
+** Archivo exceptions.h: Archivo de excepciones
 **
 ** Referencias:
 **      Enlaces de interes
@@ -43,7 +43,7 @@ class Exceptions : public std::exception {
  */
 class MatrixNegativeSizeException : public Exceptions {
  public:
-  MatrixNegativeSizeException() : Exceptions("Error: Ninguna dimension puede ser negativas.") {}
+  MatrixNegativeSizeException() : Exceptions("Error: No dimension can be negative, both must be positive natural numbers.") {}
 };
 
 /**
@@ -51,7 +51,7 @@ class MatrixNegativeSizeException : public Exceptions {
  */
 class MatrixBothZeroException : public Exceptions {
  public:
-  MatrixBothZeroException() : Exceptions("Error: Ambas dimensiones de matriz son 0. Al menos una debe ser positiva.") {}
+  MatrixBothZeroException() : Exceptions("Error: Both dimensions can not be 0, at least one of them mist be a positive natural number.") {}
 };
 
 /**
@@ -63,7 +63,7 @@ class MatrixIndexOutOfRangeException : public Exceptions {
     : Exceptions(
       "Error: index out of range [" + std::to_string(i) + 
       "][" + std::to_string(j) + "]. " +
-      "La matriz es de " + std::to_string(rows) + "x" + 
+      "Matrix is " + std::to_string(rows) + "x" + 
       std::to_string(columns) + "."
     ) {}
 };

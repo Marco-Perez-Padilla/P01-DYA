@@ -9,7 +9,7 @@
 ** Correo: alu0101469348@ull.edu.es
 ** Fecha: 31/01/2026
 
-** Archivo matrix.h: 
+** Archivo matrix.h: Declaracion de la clase Matrix siguiendo los principios SOLID y el patron estrategia
 **
 ** Referencias:
 **      Enlaces de interes
