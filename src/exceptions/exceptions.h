@@ -68,4 +68,17 @@ class MatrixIndexOutOfRangeException : public Exceptions {
     ) {}
 };
 
+/**
+ * @brief Class MatrixMultiplicationException. Throws an exception if two matrixes can not be multiplied
+ */
+class MatrixMultiplicationException : public Exceptions {
+ public:
+  MatrixMultiplicationException(int columns, int rows)
+    : Exceptions(
+      "Error: No se pueden multiplicar matrices. " +
+      std::string("A Matrix columns (") + std::to_string(columns) + 
+      ") != B Matrix rows (" + std::to_string(rows) + ")."
+    ) {}
+};
+
 #endif

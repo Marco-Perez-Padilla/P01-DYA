@@ -31,8 +31,8 @@ class Matrix {
  public:
   Matrix(int rows = 0, int columns = 0);
     
-  int getRows() const { return rows_; }
-  int getColumns() const { return columns_; }
+  int getRows() const {return rows_;}
+  int getColumns() const {return columns_;}
     
   double& operator()(int i, int j);
   const double& operator()(int i, int j) const;

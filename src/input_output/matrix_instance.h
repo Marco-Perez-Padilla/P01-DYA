@@ -18,8 +18,23 @@
 **      01/02/2026 - Creacion (primera version) del codigo
 **/
 
-#ifndef MATRIX_H
-#define MATRIX_H
+#ifndef MATRIX_INSTANCE_H
+#define MATRIX_INSTANCE_H
 
+#include <string>
+#include "../matrix/matrix.h"
+
+class MatrixInstance {
+ private:
+  Matrix MatrixA_;
+  Matrix MatrixB_;
+
+ public: 
+  MatrixInstance(const Matrix& A, const Matrix& B);
+  const Matrix& getMatrixA() {return MatrixA_;}
+  const Matrix& getMatrixB() {return MatrixB_;}
+  bool CanBeMultiplied() const;
+  std::string PrintDimensions() const;
+};
 
 #endif
