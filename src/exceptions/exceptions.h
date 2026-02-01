@@ -75,7 +75,7 @@ class MatrixMultiplicationException : public Exceptions {
  public:
   MatrixMultiplicationException(int columns, int rows)
     : Exceptions(
-      "Error: No se pueden multiplicar matrices. " +
+      "Error: It is not possible to multiply the matrixes. " +
       std::string("A Matrix columns (") + std::to_string(columns) + 
       ") != B Matrix rows (" + std::to_string(rows) + ")."
     ) {}

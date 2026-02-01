@@ -26,7 +26,7 @@
 class MultiplyByColumns : public MatrixAlgorithmInterface {
  public:
   MatrixSolution solve(const MatrixInstance& instance) override;
-  std::string name() const override { return "Multiplicacion por Columnas"; }
+  std::string name() const override { return "Multiplication by Columns"; }
   std::string complexity() const override { return "O(m x n x l)"; }
 };
 

@@ -9,23 +9,15 @@
 ** Correo: alu0101469348@ull.edu.es
 ** Fecha: 01/02/2026
 
-** Archivo main.cpp: Programa principal que ejecuta el menú
+** Archivo help.h: Funciones de ayuda
 **
 ** Referencias:
 **      Enlaces de interés
 
 ** Historial de revisiones:
-**      01/02/2026 - Creación (primera versión)
+**      01/02/2026 - Creación (primera versión) del código
 **/
 
-#include <string>
-#include "menu/menu.h"
-#include "help/help_functions.h"
-
-int main(int argc, char* argv[]) {
-  int result = ValidateArguments(argc, argv);
-  if (result >= 0) return result;
-  Menu menu;
-  menu.Run();
-  return 0;
-}
+void Help ();
+void Usage();
+int ValidateArguments(int argc, char* argv[]);
